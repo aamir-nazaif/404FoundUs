@@ -104,7 +104,7 @@ else:
 
                 # ---- Update placeholder after generation ----
                 if isinstance(data, list) and "summary_text" in data[0]:
-                    status_placeholder.success("✅ AI summary generated!")  # replaces old message
+                    status_placeholder.success("AI summary READY!")  # replaces old message
                     summary_text = data[0]["summary_text"]
                     sentences = summary_text.split(". ")
                     bullet_points = [f"• {s.strip()}." for s in sentences if s]
